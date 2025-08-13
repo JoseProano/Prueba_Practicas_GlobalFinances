@@ -8,5 +8,5 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-// Task routes
+// Task routes using database
 Route::apiResource('tasks', TaskController::class);
